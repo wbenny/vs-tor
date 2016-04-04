@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Small_Size|Win32">
+      <Configuration>Release_Small_Size</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Small_Size|x64">
+      <Configuration>Release_Small_Size</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8D8E38C8-945F-47B7-B185-6FCE124FBA08}</ProjectGuid>
+    <RootNamespace>tor</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small_Size|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small_Size|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small_Size|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small_Size|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\obj\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\obj\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small_Size|Win32'">
+    <OutDir>$(SolutionDir)bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\obj\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\obj\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\obj\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small_Size|x64'">
+    <OutDir>$(SolutionDir)bin\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\obj\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\openssl\include;$(ProjectDir)..\zlib;$(ProjectDir)..\libevent\include;$(ProjectDir)..\tor\src\win32;$(ProjectDir)..\tor\src\common;$(ProjectDir)..\tor\src\ext;$(ProjectDir)..\tor\src\ext\trunnel;$(ProjectDir)..\tor\src\trunnel;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;ED25519_CUSTOMRANDOM;ED25519_SUFFIX=_donna;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4334;4305;4267;4244;4146;4101;4090;4028;4018;4005</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\openssl\include;$(ProjectDir)..\zlib;$(ProjectDir)..\libevent\include;$(ProjectDir)..\tor\src\win32;$(ProjectDir)..\tor\src\common;$(ProjectDir)..\tor\src\ext;$(ProjectDir)..\tor\src\ext\trunnel;$(ProjectDir)..\tor\src\trunnel;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;ED25519_CUSTOMRANDOM;ED25519_SUFFIX=_donna;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4334;4305;4267;4244;4146;4101;4090;4028;4018;4005</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\openssl\include;$(ProjectDir)..\zlib;$(ProjectDir)..\libevent\include;$(ProjectDir)..\tor\src\win32;$(ProjectDir)..\tor\src\common;$(ProjectDir)..\tor\src\ext;$(ProjectDir)..\tor\src\ext\trunnel;$(ProjectDir)..\tor\src\trunnel;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;ED25519_CUSTOMRANDOM;ED25519_SUFFIX=_donna;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4334;4305;4267;4244;4146;4101;4090;4028;4018;4005</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small_Size|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>
+      </IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\openssl\include;$(ProjectDir)..\zlib;$(ProjectDir)..\libevent\include;$(ProjectDir)..\tor\src\win32;$(ProjectDir)..\tor\src\common;$(ProjectDir)..\tor\src\ext;$(ProjectDir)..\tor\src\ext\trunnel;$(ProjectDir)..\tor\src\trunnel;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;ED25519_CUSTOMRANDOM;ED25519_SUFFIX=_donna;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4334;4305;4267;4244;4146;4101;4090;4028;4018;4005</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\openssl\include;$(ProjectDir)..\zlib;$(ProjectDir)..\libevent\include;$(ProjectDir)..\tor\src\win32;$(ProjectDir)..\tor\src\common;$(ProjectDir)..\tor\src\ext;$(ProjectDir)..\tor\src\ext\trunnel;$(ProjectDir)..\tor\src\trunnel;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;ED25519_CUSTOMRANDOM;ED25519_SUFFIX=_donna;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4334;4305;4267;4244;4146;4101;4090;4028;4018;4005</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Small_Size|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>
+      </IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\openssl\include;$(ProjectDir)..\zlib;$(ProjectDir)..\libevent\include;$(ProjectDir)..\tor\src\win32;$(ProjectDir)..\tor\src\common;$(ProjectDir)..\tor\src\ext;$(ProjectDir)..\tor\src\ext\trunnel;$(ProjectDir)..\tor\src\trunnel;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;ED25519_CUSTOMRANDOM;ED25519_SUFFIX=_donna;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4334;4305;4267;4244;4146;4101;4090;4028;4018;4005</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>crypt32.lib;ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\tor\src\common\address.h" />
+    <ClInclude Include="..\tor\src\common\aes.h" />
+    <ClInclude Include="..\tor\src\common\backtrace.h" />
+    <ClInclude Include="..\tor\src\common\compat.h" />
+    <ClInclude Include="..\tor\src\common\compat_libevent.h" />
+    <ClInclude Include="..\tor\src\common\compat_threads.h" />
+    <ClInclude Include="..\tor\src\common\container.h" />
+    <ClInclude Include="..\tor\src\common\crypto.h" />
+    <ClInclude Include="..\tor\src\common\crypto_curve25519.h" />
+    <ClInclude Include="..\tor\src\common\crypto_ed25519.h" />
+    <ClInclude Include="..\tor\src\common\crypto_format.h" />
+    <ClInclude Include="..\tor\src\common\crypto_pwbox.h" />
+    <ClInclude Include="..\tor\src\common\crypto_s2k.h" />
+    <ClInclude Include="..\tor\src\common\di_ops.h" />
+    <ClInclude Include="..\tor\src\common\memarea.h" />
+    <ClInclude Include="..\tor\src\common\procmon.h" />
+    <ClInclude Include="..\tor\src\common\sandbox.h" />
+    <ClInclude Include="..\tor\src\common\testsupport.h" />
+    <ClInclude Include="..\tor\src\common\torgzip.h" />
+    <ClInclude Include="..\tor\src\common\torint.h" />
+    <ClInclude Include="..\tor\src\common\torlog.h" />
+    <ClInclude Include="..\tor\src\common\tortls.h" />
+    <ClInclude Include="..\tor\src\common\util.h" />
+    <ClInclude Include="..\tor\src\common\util_format.h" />
+    <ClInclude Include="..\tor\src\common\util_process.h" />
+    <ClInclude Include="..\tor\src\common\workqueue.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\curve25519-donna-32bit.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\curve25519-donna-64bit.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\curve25519-donna-helpers.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\curve25519-donna-sse2.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-32bit-sse2.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-32bit-tables.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-64bit-sse2.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-64bit-tables.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-64bit-x86-32bit.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-64bit-x86.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-basepoint-table.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-batchverify.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-impl-base.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-impl-sse2.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-portable-identify.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-portable.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-hash-custom.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-hash.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-randombytes-custom.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-randombytes.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519_donna_tor.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\modm-donna-32bit.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\modm-donna-64bit.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\api.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\base.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\base2.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_hash_sha512.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_int32.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_int64.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_sign.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_uint32.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_uint64.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_verify_32.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\d.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\d2.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ed25519_ref10.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\fe.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_add.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_madd.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_msub.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_p2_dbl.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_sub.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\pow22523.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\pow225521.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\randombytes.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\sc.h" />
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\sqrtm1.h" />
+    <ClInclude Include="..\tor\src\ext\siphash.h" />
+    <ClInclude Include="..\tor\src\ext\trunnel\trunnel-impl.h" />
+    <ClInclude Include="..\tor\src\ext\trunnel\trunnel.h" />
+    <ClInclude Include="..\tor\src\or\addressmap.h" />
+    <ClInclude Include="..\tor\src\or\buffers.h" />
+    <ClInclude Include="..\tor\src\or\channel.h" />
+    <ClInclude Include="..\tor\src\or\channeltls.h" />
+    <ClInclude Include="..\tor\src\or\circpathbias.h" />
+    <ClInclude Include="..\tor\src\or\circuitbuild.h" />
+    <ClInclude Include="..\tor\src\or\circuitlist.h" />
+    <ClInclude Include="..\tor\src\or\circuitmux.h" />
+    <ClInclude Include="..\tor\src\or\circuitmux_ewma.h" />
+    <ClInclude Include="..\tor\src\or\circuitstats.h" />
+    <ClInclude Include="..\tor\src\or\circuituse.h" />
+    <ClInclude Include="..\tor\src\or\command.h" />
+    <ClInclude Include="..\tor\src\or\config.h" />
+    <ClInclude Include="..\tor\src\or\confparse.h" />
+    <ClInclude Include="..\tor\src\or\connection.h" />
+    <ClInclude Include="..\tor\src\or\connection_edge.h" />
+    <ClInclude Include="..\tor\src\or\connection_or.h" />
+    <ClInclude Include="..\tor\src\or\control.h" />
+    <ClInclude Include="..\tor\src\or\cpuworker.h" />
+    <ClInclude Include="..\tor\src\or\dircollate.h" />
+    <ClInclude Include="..\tor\src\or\directory.h" />
+    <ClInclude Include="..\tor\src\or\dirserv.h" />
+    <ClInclude Include="..\tor\src\or\dirvote.h" />
+    <ClInclude Include="..\tor\src\or\dns.h" />
+    <ClInclude Include="..\tor\src\or\dnsserv.h" />
+    <ClInclude Include="..\tor\src\or\dns_structs.h" />
+    <ClInclude Include="..\tor\src\or\entrynodes.h" />
+    <ClInclude Include="..\tor\src\or\eventdns_tor.h" />
+    <ClInclude Include="..\tor\src\or\ext_orport.h" />
+    <ClInclude Include="..\tor\src\or\fp_pair.h" />
+    <ClInclude Include="..\tor\src\or\geoip.h" />
+    <ClInclude Include="..\tor\src\or\hibernate.h" />
+    <ClInclude Include="..\tor\src\or\keypin.h" />
+    <ClInclude Include="..\tor\src\or\main.h" />
+    <ClInclude Include="..\tor\src\or\microdesc.h" />
+    <ClInclude Include="..\tor\src\or\networkstatus.h" />
+    <ClInclude Include="..\tor\src\or\nodelist.h" />
+    <ClInclude Include="..\tor\src\or\ntmain.h" />
+    <ClInclude Include="..\tor\src\or\onion.h" />
+    <ClInclude Include="..\tor\src\or\onion_fast.h" />
+    <ClInclude Include="..\tor\src\or\onion_ntor.h" />
+    <ClInclude Include="..\tor\src\or\onion_tap.h" />
+    <ClInclude Include="..\tor\src\or\or.h" />
+    <ClInclude Include="..\tor\src\or\policies.h" />
+    <ClInclude Include="..\tor\src\or\reasons.h" />
+    <ClInclude Include="..\tor\src\or\relay.h" />
+    <ClInclude Include="..\tor\src\or\rendcache.h" />
+    <ClInclude Include="..\tor\src\or\rendclient.h" />
+    <ClInclude Include="..\tor\src\or\rendcommon.h" />
+    <ClInclude Include="..\tor\src\or\rendmid.h" />
+    <ClInclude Include="..\tor\src\or\rendservice.h" />
+    <ClInclude Include="..\tor\src\or\rephist.h" />
+    <ClInclude Include="..\tor\src\or\replaycache.h" />
+    <ClInclude Include="..\tor\src\or\router.h" />
+    <ClInclude Include="..\tor\src\or\routerkeys.h" />
+    <ClInclude Include="..\tor\src\or\routerlist.h" />
+    <ClInclude Include="..\tor\src\or\routerparse.h" />
+    <ClInclude Include="..\tor\src\or\routerset.h" />
+    <ClInclude Include="..\tor\src\or\scheduler.h" />
+    <ClInclude Include="..\tor\src\or\statefile.h" />
+    <ClInclude Include="..\tor\src\or\status.h" />
+    <ClInclude Include="..\tor\src\or\torcert.h" />
+    <ClInclude Include="..\tor\src\or\transports.h" />
+    <ClInclude Include="..\tor\src\trunnel\ed25519_cert.h" />
+    <ClInclude Include="..\tor\src\trunnel\link_handshake.h" />
+    <ClInclude Include="..\tor\src\trunnel\pwbox.h" />
+    <ClInclude Include="..\tor\src\trunnel\trunnel-local.h" />
+    <ClInclude Include="..\tor\src\win32\orconfig.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tor\src\common\address.c" />
+    <ClCompile Include="..\tor\src\common\aes.c" />
+    <ClCompile Include="..\tor\src\common\backtrace.c" />
+    <ClCompile Include="..\tor\src\common\compat.c" />
+    <ClCompile Include="..\tor\src\common\compat_libevent.c" />
+    <ClCompile Include="..\tor\src\common\compat_threads.c" />
+    <ClCompile Include="..\tor\src\common\compat_winthreads.c" />
+    <ClCompile Include="..\tor\src\common\container.c" />
+    <ClCompile Include="..\tor\src\common\crypto.c" />
+    <ClCompile Include="..\tor\src\common\crypto_curve25519.c" />
+    <ClCompile Include="..\tor\src\common\crypto_ed25519.c" />
+    <ClCompile Include="..\tor\src\common\crypto_format.c" />
+    <ClCompile Include="..\tor\src\common\crypto_pwbox.c" />
+    <ClCompile Include="..\tor\src\common\crypto_s2k.c" />
+    <ClCompile Include="..\tor\src\common\di_ops.c" />
+    <ClCompile Include="..\tor\src\common\log.c" />
+    <ClCompile Include="..\tor\src\common\memarea.c" />
+    <ClCompile Include="..\tor\src\common\procmon.c" />
+    <ClCompile Include="..\tor\src\common\sandbox.c" />
+    <ClCompile Include="..\tor\src\common\torgzip.c" />
+    <ClCompile Include="..\tor\src\common\tortls.c" />
+    <ClCompile Include="..\tor\src\common\util.c" />
+    <ClCompile Include="..\tor\src\common\util_format.c" />
+    <ClCompile Include="..\tor\src\common\util_process.c" />
+    <ClCompile Include="..\tor\src\common\workqueue.c" />
+    <ClCompile Include="..\tor\src\ext\csiphash.c" />
+    <ClCompile Include="..\tor\src\ext\curve25519_donna\curve25519-donna.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\donna\ed25519_tor.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\blinding.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_0.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_1.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_add.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_cmov.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_copy.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_frombytes.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_invert.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_isnegative.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_isnonzero.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_mul.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_neg.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_pow22523.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_sq.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_sq2.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_sub.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_tobytes.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_add.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_double_scalarmult.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_frombytes.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_madd.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_msub.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p1p1_to_p2.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p1p1_to_p3.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p2_0.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p2_dbl.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_0.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_dbl.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_tobytes.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_to_cached.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_to_p2.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_precomp_0.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_scalarmult_base.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_sub.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_tobytes.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\keyconv.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\keypair.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\open.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\sc_muladd.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\sc_reduce.c" />
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\sign.c" />
+    <ClCompile Include="..\tor\src\ext\trunnel\trunnel.c" />
+    <ClCompile Include="..\tor\src\or\addressmap.c" />
+    <ClCompile Include="..\tor\src\or\buffers.c" />
+    <ClCompile Include="..\tor\src\or\channel.c" />
+    <ClCompile Include="..\tor\src\or\channeltls.c" />
+    <ClCompile Include="..\tor\src\or\circpathbias.c" />
+    <ClCompile Include="..\tor\src\or\circuitbuild.c" />
+    <ClCompile Include="..\tor\src\or\circuitlist.c" />
+    <ClCompile Include="..\tor\src\or\circuitmux.c" />
+    <ClCompile Include="..\tor\src\or\circuitmux_ewma.c" />
+    <ClCompile Include="..\tor\src\or\circuitstats.c" />
+    <ClCompile Include="..\tor\src\or\circuituse.c" />
+    <ClCompile Include="..\tor\src\or\command.c" />
+    <ClCompile Include="..\tor\src\or\config.c" />
+    <ClCompile Include="..\tor\src\or\confparse.c" />
+    <ClCompile Include="..\tor\src\or\connection.c" />
+    <ClCompile Include="..\tor\src\or\connection_edge.c" />
+    <ClCompile Include="..\tor\src\or\connection_or.c" />
+    <ClCompile Include="..\tor\src\or\control.c" />
+    <ClCompile Include="..\tor\src\or\cpuworker.c" />
+    <ClCompile Include="..\tor\src\or\dircollate.c" />
+    <ClCompile Include="..\tor\src\or\directory.c" />
+    <ClCompile Include="..\tor\src\or\dirserv.c" />
+    <ClCompile Include="..\tor\src\or\dirvote.c" />
+    <ClCompile Include="..\tor\src\or\dns.c" />
+    <ClCompile Include="..\tor\src\or\dnsserv.c" />
+    <ClCompile Include="..\tor\src\or\entrynodes.c" />
+    <ClCompile Include="..\tor\src\or\ext_orport.c" />
+    <ClCompile Include="..\tor\src\or\fp_pair.c" />
+    <ClCompile Include="..\tor\src\or\geoip.c" />
+    <ClCompile Include="..\tor\src\or\hibernate.c" />
+    <ClCompile Include="..\tor\src\or\keypin.c" />
+    <ClCompile Include="..\tor\src\or\main.c" />
+    <ClCompile Include="..\tor\src\or\microdesc.c" />
+    <ClCompile Include="..\tor\src\or\networkstatus.c" />
+    <ClCompile Include="..\tor\src\or\nodelist.c" />
+    <ClCompile Include="..\tor\src\or\ntmain.c" />
+    <ClCompile Include="..\tor\src\or\onion.c" />
+    <ClCompile Include="..\tor\src\or\onion_fast.c" />
+    <ClCompile Include="..\tor\src\or\onion_ntor.c" />
+    <ClCompile Include="..\tor\src\or\onion_tap.c" />
+    <ClCompile Include="..\tor\src\or\policies.c" />
+    <ClCompile Include="..\tor\src\or\reasons.c" />
+    <ClCompile Include="..\tor\src\or\relay.c" />
+    <ClCompile Include="..\tor\src\or\rendcache.c" />
+    <ClCompile Include="..\tor\src\or\rendclient.c" />
+    <ClCompile Include="..\tor\src\or\rendcommon.c" />
+    <ClCompile Include="..\tor\src\or\rendmid.c" />
+    <ClCompile Include="..\tor\src\or\rendservice.c" />
+    <ClCompile Include="..\tor\src\or\rephist.c" />
+    <ClCompile Include="..\tor\src\or\replaycache.c" />
+    <ClCompile Include="..\tor\src\or\router.c" />
+    <ClCompile Include="..\tor\src\or\routerkeys.c" />
+    <ClCompile Include="..\tor\src\or\routerlist.c" />
+    <ClCompile Include="..\tor\src\or\routerparse.c" />
+    <ClCompile Include="..\tor\src\or\routerset.c" />
+    <ClCompile Include="..\tor\src\or\scheduler.c" />
+    <ClCompile Include="..\tor\src\or\statefile.c" />
+    <ClCompile Include="..\tor\src\or\status.c" />
+    <ClCompile Include="..\tor\src\or\torcert.c" />
+    <ClCompile Include="..\tor\src\or\tor_main.c" />
+    <ClCompile Include="..\tor\src\or\transports.c" />
+    <ClCompile Include="..\tor\src\trunnel\ed25519_cert.c" />
+    <ClCompile Include="..\tor\src\trunnel\link_handshake.c" />
+    <ClCompile Include="..\tor\src\trunnel\pwbox.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="libeay32.vcxproj">
+      <Project>{a465545e-16a5-4336-a4b3-71ae7287da89}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libevent.vcxproj">
+      <Project>{6aa8f3e2-3a94-4245-9b53-704fe21cdd80}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ssleay32.vcxproj">
+      <Project>{61bd60c1-17c1-4abb-bee4-73d2e9241759}</Project>
+    </ProjectReference>
+    <ProjectReference Include="zlib.vcxproj">
+      <Project>{baeb16b3-db4c-432f-9e6a-2acadea0691d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

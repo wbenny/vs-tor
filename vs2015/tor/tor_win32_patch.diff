@@ -1,0 +1,60 @@
+diff --git a/src/common/memarea.c b/src/common/memarea.c
+index 6841ba5..4a976ae 100644
+--- a/src/common/memarea.c
++++ b/src/common/memarea.c
+@@ -24,7 +24,7 @@
+ #if MEMAREA_ALIGN == 4
+ #define MEMAREA_ALIGN_MASK 3lu
+ #elif MEMAREA_ALIGN == 8
+-#define MEMAREA_ALIGN_MASK 7lu
++#define MEMAREA_ALIGN_MASK 7llu
+ #else
+ #error "void* is neither 4 nor 8 bytes long. I don't know how to align stuff."
+ #endif
+diff --git a/src/ext/trunnel/trunnel.h b/src/ext/trunnel/trunnel.h
+index 6140a39..f0ee902 100644
+--- a/src/ext/trunnel/trunnel.h
++++ b/src/ext/trunnel/trunnel.h
+@@ -13,6 +13,7 @@
+ #define TRUNNEL_H_INCLUDED_
+ 
+ #include <sys/types.h>
++#include "torint.h"
+ 
+ /** Macro to declare a variable-length dynamically allocated array.  Trunnel
+  * uses these to store all variable-length arrays. */
+diff --git a/src/win32/orconfig.h b/src/win32/orconfig.h
+index 822e261..1101344 100644
+--- a/src/win32/orconfig.h
++++ b/src/win32/orconfig.h
+@@ -260,3 +260,30 @@
+ #define _WIN32_WINNT 0x0501
+ #define WIN32_LEAN_AND_MEAN 1
+ 
++//////////////////////////////////////////////////////////////////////////
++/* we probably don't even have STDIN_FILENO */
++#ifndef STDIN_FILENO
++#define STDIN_FILENO 0
++#endif
++/* disable warnings */
++#define _CRT_SECURE_NO_WARNINGS
++#define _SCL_SECURE_NO_WARNINGS
++/* fix sizeof(void*) */
++#undef SIZEOF_VOID_P
++#ifdef _M_AMD64
++#define SIZEOF_VOID_P 8
++#elif _M_IX86
++#define SIZEOF_VOID_P 4
++#else
++#error "Invalid platform"
++#endif
++/* fix sizeof(size_t) */
++#undef SIZEOF_SIZE_T
++#define SIZEOF_SIZE_T SIZEOF_VOID_P
++/* explicitly define these options */
++#define HAVE_EXTERN_ENVIRON_DECLARED
++#define HAVE_STDINT_H
++/* even though we have HAVE_FCNTL_H,
++fcntl.h does not have open/write/close/... functions.
++we have to include them from io.h */
++#include <io.h>

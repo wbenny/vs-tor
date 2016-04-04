@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\common">
+      <UniqueIdentifier>{0ebc0fcd-9f3d-44ea-885d-e805abfd8a65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext">
+      <UniqueIdentifier>{ef3fc9a0-cc5e-452b-8175-f707f95035ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\or">
+      <UniqueIdentifier>{04517dc4-c46a-4d8d-be87-60946c7d938e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\trunnel">
+      <UniqueIdentifier>{e6e137a0-573f-4a50-a6b4-712494670615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\win32">
+      <UniqueIdentifier>{4e692df2-55e8-4404-ae7b-8373b31ed4fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\common">
+      <UniqueIdentifier>{15c8f146-b92f-4c81-9969-36c4e39cb7ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext">
+      <UniqueIdentifier>{d21e0340-1b2d-4085-b15d-ff70a00e71c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\or">
+      <UniqueIdentifier>{3e3966f4-88ee-4f01-ac92-335f15b9bd6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\trunnel">
+      <UniqueIdentifier>{410cbe9b-17de-461a-8404-5100cbf176e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext\ed25519">
+      <UniqueIdentifier>{9ba5b6fa-9ec9-4210-983b-85f63afaa4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext\trunnel">
+      <UniqueIdentifier>{a278962a-326d-4393-8ecc-a2f383f91eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\trunnel">
+      <UniqueIdentifier>{55049c16-8f1f-494f-8515-305f5bb8a50a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\curve25519_donna">
+      <UniqueIdentifier>{8de98c63-615b-428a-a9d2-b1a89c17427e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\ed25519">
+      <UniqueIdentifier>{a8044d85-3f9a-41c7-945b-411e5b1e4b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext\ed25519\donna">
+      <UniqueIdentifier>{810afb03-d797-457d-905d-f290c094e43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ext\ed25519\ref10">
+      <UniqueIdentifier>{8ccec763-60b1-4ea3-812a-ebea35d9c3cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\ed25519\donna">
+      <UniqueIdentifier>{0ee0f415-9e33-44fe-9123-e9c827056268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ext\ed25519\ref10">
+      <UniqueIdentifier>{9e55e3e1-1fba-4d43-a484-1ec7bace90d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\tor\src\common\workqueue.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\util_process.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\util_format.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\util.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\tortls.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\torlog.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\torint.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\torgzip.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\testsupport.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\sandbox.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\procmon.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\memarea.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\di_ops.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\crypto_s2k.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\crypto_pwbox.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\crypto_format.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\crypto_ed25519.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\crypto_curve25519.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\crypto.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\container.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\compat_threads.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\compat_libevent.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\compat.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\backtrace.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\aes.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\common\address.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\win32\orconfig.h">
+      <Filter>Header Files\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\trunnel\ed25519_cert.h">
+      <Filter>Header Files\trunnel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\trunnel\link_handshake.h">
+      <Filter>Header Files\trunnel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\trunnel\pwbox.h">
+      <Filter>Header Files\trunnel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\trunnel\trunnel-local.h">
+      <Filter>Header Files\trunnel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\transports.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\torcert.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\status.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\statefile.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\scheduler.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\routerset.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\routerparse.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\routerlist.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\routerkeys.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\router.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\replaycache.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\rephist.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\rendservice.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\rendmid.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\rendcommon.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\rendclient.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\rendcache.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\relay.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\reasons.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\policies.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\or.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\onion_tap.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\onion_ntor.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\onion_fast.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\onion.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\ntmain.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\nodelist.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\networkstatus.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\microdesc.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\main.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\keypin.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\channeltls.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\channel.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\hibernate.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\geoip.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\fp_pair.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\ext_orport.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\eventdns_tor.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\entrynodes.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\dnsserv.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\dns_structs.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\dns.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\dirvote.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\dirserv.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\directory.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\dircollate.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\cpuworker.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\control.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\connection_or.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\connection_edge.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\connection.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\confparse.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\config.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\command.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\circuituse.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\circuitstats.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\circuitmux_ewma.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\circuitmux.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\circuitlist.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\circuitbuild.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\circpathbias.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\buffers.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\or\addressmap.h">
+      <Filter>Header Files\or</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\siphash.h">
+      <Filter>Header Files\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\curve25519-donna-32bit.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\curve25519-donna-64bit.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\curve25519-donna-helpers.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\curve25519-donna-sse2.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519_donna_tor.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-32bit-sse2.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-32bit-tables.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-64bit-sse2.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-64bit-tables.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-64bit-x86.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-64bit-x86-32bit.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-basepoint-table.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-batchverify.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-impl-base.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-impl-sse2.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-portable.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-donna-portable-identify.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-hash.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-hash-custom.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-randombytes.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\ed25519-randombytes-custom.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\modm-donna-32bit.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\donna\modm-donna-64bit.h">
+      <Filter>Header Files\ext\ed25519\donna</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\sqrtm1.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\sc.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\randombytes.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\pow225521.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\pow22523.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_sub.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_p2_dbl.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_msub.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_madd.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge_add.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ge.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\fe.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\ed25519_ref10.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\d2.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\d.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_verify_32.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_uint64.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_uint32.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_sign.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_int64.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_int32.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\crypto_hash_sha512.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\base2.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\base.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\ed25519\ref10\api.h">
+      <Filter>Header Files\ext\ed25519\ref10</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\trunnel\trunnel.h">
+      <Filter>Header Files\ext\trunnel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tor\src\ext\trunnel\trunnel-impl.h">
+      <Filter>Header Files\ext\trunnel</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tor\src\common\address.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\aes.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\backtrace.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\compat.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\compat_libevent.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\compat_threads.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\compat_winthreads.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\container.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\crypto.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\crypto_curve25519.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\crypto_ed25519.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\crypto_format.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\crypto_pwbox.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\crypto_s2k.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\di_ops.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\log.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\memarea.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\procmon.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\sandbox.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\torgzip.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\tortls.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\util.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\util_format.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\util_process.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\common\workqueue.c">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\trunnel\ed25519_cert.c">
+      <Filter>Source Files\trunnel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\trunnel\link_handshake.c">
+      <Filter>Source Files\trunnel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\trunnel\pwbox.c">
+      <Filter>Source Files\trunnel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\addressmap.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\buffers.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\circpathbias.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\circuitbuild.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\circuitlist.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\circuitmux.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\circuitmux_ewma.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\circuitstats.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\circuituse.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\command.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\config.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\confparse.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\connection.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\connection_edge.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\connection_or.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\control.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\cpuworker.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\dircollate.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\directory.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\dirserv.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\dirvote.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\dns.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\dnsserv.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\entrynodes.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\ext_orport.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\fp_pair.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\geoip.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\hibernate.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\channel.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\channeltls.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\keypin.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\main.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\microdesc.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\networkstatus.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\nodelist.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\ntmain.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\onion.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\onion_fast.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\onion_ntor.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\onion_tap.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\policies.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\reasons.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\relay.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\rendcache.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\rendclient.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\rendcommon.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\rendmid.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\rendservice.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\rephist.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\replaycache.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\router.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\routerkeys.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\routerlist.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\routerparse.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\routerset.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\scheduler.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\statefile.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\status.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\tor_main.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\torcert.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\or\transports.c">
+      <Filter>Source Files\or</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\csiphash.c">
+      <Filter>Source Files\ext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\sign.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\sc_reduce.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\sc_muladd.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\open.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\keypair.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\keyconv.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_tobytes.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_sub.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_scalarmult_base.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_precomp_0.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_tobytes.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_to_p2.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_to_cached.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_dbl.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p3_0.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p2_dbl.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p2_0.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p1p1_to_p3.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_p1p1_to_p2.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_msub.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_madd.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_frombytes.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_double_scalarmult.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\ge_add.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_tobytes.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_sub.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_sq2.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_sq.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_pow22523.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_neg.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_mul.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_isnonzero.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_isnegative.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_invert.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_frombytes.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_copy.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_cmov.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_add.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_1.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\fe_0.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\ref10\blinding.c">
+      <Filter>Source Files\ext\ed25519\ref10</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\curve25519_donna\curve25519-donna.c">
+      <Filter>Source Files\ext\curve25519_donna</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\trunnel\trunnel.c">
+      <Filter>Source Files\ext\trunnel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tor\src\ext\ed25519\donna\ed25519_tor.c">
+      <Filter>Source Files\ext\ed25519\donna</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
