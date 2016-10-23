@@ -15,4 +15,4 @@ git clone https://github.com/madler/zlib.git --branch v1.2.8
 git clone https://github.com/libevent/libevent.git --branch release-2.1.5-beta
 git clone https://github.com/torproject/tor --branch tor-0.2.7.6
 
-git apply --whitespace=nowarn --directory=tor vs2015/tor/tor_win32_patch.diff
+git apply --ignore-space-change --ignore-whitespace --whitespace=nowarn --directory=tor vs2015/tor/tor_win32_patch.diff
